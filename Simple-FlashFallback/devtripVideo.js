@@ -1,0 +1,13 @@
+/**
+*
+Copyright (c) 2014-15 Kavindra Dubey - kavindra.dubey@gmail.com [personal site - devtrip.com]. devtripVideo v1.0 <https://github.com/kavindraD/devtripVideo/blob/master/simple/Html5VideoPlayer/eventHandlers/build/devtripVideo.js> is released under the MIT License <http://opensource.org/licenses/MIT> 
+
+Except as contained in this notice, the name(s) of the above copyright holders shall not be used in advertising or otherwise to promote the sale, use or other dealings in this Software without prior written authorization.
+
+The end-user documentation included with the redistribution, if any, must include the following acknowledgment: "This product includes software developed by The devtripVideo Project, (http://www.devtrip.com/) and its contributors", in the same place and form as other third-party acknowledgments. Alternately, this acknowledgment may appear in the software itself, in the same form and location as other such third-party acknowledgments.
+*
+**/
+var devtripVideo=function(){function c(a,c){var b=a.canPlayType(c);if("maybe"==b)return c;if(""==b)return""}function e(a){switch(a.target.error.code){case a.target.error.MEDIA_ERR_ABORTED:alert("You aborted the video playback.");break;case a.target.error.MEDIA_ERR_NETWORK:alert("A network error caused the video download to fail part-way.");break;case a.target.error.MEDIA_ERR_DECODE:alert("The video playback was aborted due to a corruption problem or because the video used features your browser did not support.");
+break;case a.target.error.MEDIA_ERR_SRC_NOT_SUPPORTED:alert("The video could not be loaded, either because the server or network failed or because the format is not supported.");break;default:alert("An unknown error occurred.")}cllback_errorHandler.call()}var g="";return{init:function(a){var h=document.getElementById(a.containerId),b=document.createElement("video");b.id="videoplayer";b.width=a.width;b.height=a.height;var d=g+a.video;ogg="video/ogg";webm="video/webm";var f=".dt";"video/mp4"==c(b,"video/mp4")?
+f=".mp4":c(b,webm)==webm?f=".webm":c(b,ogg)==ogg&&(f=".ogg");b.src=d+f;ogg="video/ogg";webm="video/webm";d="video/dt";"video/mp4"==c(b,"video/mp4")?d="video/mp4":c(b,webm)==webm?d=webm:c(b,ogg)==ogg&&(d=ogg);b.type=d;b.autoplay=a.autoplay;b.controls=!0;b.muted=!0;b.poster=g+a.videoImage;h.appendChild(b);a=document.getElementById("videoplayer");window.addEventListener?a.addEventListener("error",e,!0):document.attachEvent?a.attachEvent("onerror",e):a.onerror=e;addCallbackFunction("videoplayer")},dispose:function(){var a=
+document.getElementById("videoplayer");window.removeEventListener?a.removeEventListener("error",e,!0):document.detachEvent?a.detachEvent("onerror",e):a.onerror=null},setPath:function(a){g=a}}};

@@ -1,0 +1,37 @@
+devtripVideo player component need to be instantiated as follows - 
+
+var _devtripVideo = new devtripVideo();
+
+With normal devtrip video component following methods are available,these parameters are mandatory not optional -
+
+1. call init(param) to initialise player and its object and their associated listeners.
+	_devtripVideo.init(params);
+
+	1.1. To associate player with a container use 
+		params.containerId = "playercontainer1";
+		
+	1.2. To set width of the player use
+		params.width = "320";
+		
+	1.3. To set height of the player use
+		params.height = "240";
+		
+	1.4. To disable auto play use  
+		params.autoplay = false;
+		
+	1.5. Player will auto detect the extension required for a browser so it is recommended to have [.mp4,.webm, .ogg] format of video file with server.
+	   params.video = "abc";
+	   .mp4,.webm, .ogg format should be available at asset path.
+	   
+	1.6. Poster image can be provided using 
+		params.videoImage = "abc.png";
+		Image should be available at asset path.
+	
+2. To set assets path use 
+    _devtripVideo.setPath("assets/"); 
+    default path is "".
+	  
+3. call dispose() to remove internal listener of player.
+    _devtripVideo.dispose();
+
+A detailed use case is available with HTML page (devtripVideo.html) available with src and build package.
