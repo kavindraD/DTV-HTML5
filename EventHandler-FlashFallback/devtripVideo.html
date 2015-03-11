@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta content="text/html; charset=iso-8859-1" http-equiv="Content-Type"/>
+		<title>DevTrip Video Player</title>
+		<script type="text/javascript" src="devtripVideo.js">
+		</script>
+	</head>
+	<body>
+		<center>
+			<div id="playercontainer1">
+				<script type="text/javascript">
+					
+					var params = {},_devtripVideo = new devtripVideo();
+					params.containerId = "playercontainer1";
+					params.width = "320";
+					params.height = "240";
+					params.video = "abc";
+					params.autoplay = false;
+					params.videoImage = "abc.png";
+					function playingHandler(){
+						//alert('here');
+					};
+					_devtripVideo.cllback_playingHandler(playingHandler);
+					_devtripVideo.init(params);					
+				</script>
+			</div>
+			<div id="playercontainer2">
+				<script type="text/javascript">
+					var params = {},_devtripVideo1 = new devtripVideo();;
+					params.containerId = "playercontainer2";
+					params.width = "640";
+					params.height = "480";
+					params.video = "abc";
+					params.autoplay = false;
+					params.videoImage = "abc.png";
+					function playingHandler(){
+						//alert('here in second');
+					};
+					_devtripVideo1.setPath("assets/");
+					_devtripVideo1.cllback_playingHandler(playingHandler);				
+					_devtripVideo1.init(params);
+				</script>
+			</div>
+		</center>
+	</body>
+</html>
+

@@ -1,0 +1,129 @@
+devtripVideo player component need to be instantiated as follows - 
+
+var _devtripVideo = new devtripVideo();
+
+With event handler devtripVideo component following methods are available, 1,2 and  3 are mandatory -
+
+1. call init(param) to initialise player and its object and their associated listeners.
+	_devtripVideo.init(params);
+
+	1.1. To associate player with a container use 
+		params.containerId = "playercontainer1";
+		
+	1.2. To set width of the player use
+		params.width = "320";
+		
+	1.3. To set height of the player use
+		params.height = "240";
+		
+	1.4. To disable auto play use  
+		params.autoplay = false;
+		
+	1.5. Player will auto detect the extension required for a browser so it is recommended to have [.mp4,.webm, .ogg] format of video file with server.
+	   params.video = "abc";
+	   .mp4,.webm, .ogg format should be available at asset path.
+	   
+	1.6. Poster image can be provided using 
+		params.videoImage = "abc.png";
+		Image should be available at asset path.
+	
+2. To set assets path use 
+    _devtripVideo.setPath("assets/"); 
+    default path is "".
+	  
+3. call dispose() to remove internal listener of player.
+    _devtripVideo.dispose();
+
+4. Events can be customised as fallows [ Note - These are optional ( these should be called before _devtripVideo.init(params); ) ]
+
+	4.1. 'error' event handler can be customised as -
+		function errorHandler(){
+			//do custom code need to execute on 'error' event handler.
+		};
+		_devtripVideo.cllback_errorHandler(errorHandler);
+		
+	4.2. 'loadedmetadata' event handler can be customised as -
+		function loadedmetadataHandler(){
+			//do custom code need to execute on 'loadedmetadata' event handler.
+		};
+		_devtripVideo.cllback_loadedmetadataHandler(loadedmetadataHandler);
+		
+	4.3.	'timeupdate' event handler can be customised as -
+		function timeupdateHandler(){
+			//do custom code need to execute on 'timeupdate' event handler.
+		};
+		_devtripVideo.cllback_timeupdateHandler(timeupdateHandler);
+		
+	4.4.	'pause' event handler can be customised as -
+		function pauseHandler(){
+			//do custom code need to execute on 'pause' event handler.
+		};
+		_devtripVideo.cllback_pauseHandler(pauseHandler);
+		
+	4.5.	'playing' event handler can be customised as -
+		function playingHandler(){
+			//do custom code need to execute on 'playing' event handler.
+		};
+		_devtripVideo.cllback_playingHandler(playingHandler);
+
+	4.6.	'volumechange' event handler can be customised as -
+		function volumechangeHandler(){
+			//do custom code need to execute on 'volumechange' event handler.
+		};
+		_devtripVideo.cllback_volumechangeHandler(volumechangeHandler);
+		
+	4.7.	'loadstart' event handler can be customised as -
+		function loadstartHandler(){
+			//do custom code need to execute on 'loadstart' event handler.
+		};
+		_devtripVideo.cllback_loadstartHandler(loadstartHandler);
+		
+	4.8.	'loadeddata' event handler can be customised as -
+		function loadeddataHandler(){
+			//do custom code need to execute on 'loadeddata' event handler.
+		};
+		_devtripVideo.cllback_loadeddataHandler(loadeddataHandler);
+		
+	4.9.	'ended' event handler can be customised as -
+		function endedHandler(){
+			//do custom code need to execute on 'ended' event handler.
+		};
+		_devtripVideo.cllback_endedHandler(endedHandler);
+		
+	4.10.	'emptied' event handler can be customised as -
+		function emptiedHandler(){
+			//do custom code need to execute on 'emptied' event handler.
+		};
+		_devtripVideo.cllback_emptiedHandler(emptiedHandler);
+		
+	4.11. 'stalled' event handler can be customised as -
+		function stalledHandler(){
+			//do custom code need to execute on 'stalled' event handler.
+		};
+		_devtripVideo.cllback_stalledHandler(stalledHandler);
+		
+	4.12.	'waiting' event handler can be customised as -
+		function waitingHandler(){
+			//do custom code need to execute on 'waiting' event handler.
+		};
+		_devtripVideo.cllback_waitingHandler(waitingHandler);
+		
+	4.13.	'progress' event handler can be customised as -
+		function progressHandler(){
+			//do custom code need to execute on 'progress' event handler.
+		};
+		_devtripVideo.cllback_progressHandler(progressHandler);
+		
+	4.14.	'durationchange' event handler can be customised as -
+		function durationchangeHandler(){
+			//do custom code need to execute on 'durationchange' event handler.
+		};
+		_devtripVideo.cllback_durationchangeHandler(durationchangeHandler);
+		
+	4.15. 'canplaythrough' event handler can be customised as -
+		function canplaythroughHandler(){
+			//do custom code need to execute on 'canplaythrough' event handler.
+		};
+		_devtripVideo.cllback_canplaythroughHandler(canplaythroughHandler);
+    
+A detailed use case is available with HTML page (devtripVideo.html) available with src and build package.
