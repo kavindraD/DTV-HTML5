@@ -1,4 +1,4 @@
-# DTV-HTML5-EventHandler
+# DTV-HTML5 EventHandler-FlashFallback
 
 Event Handlers HTML5 video player powerd by **DevTrip Video** developers and its' contributers
 
