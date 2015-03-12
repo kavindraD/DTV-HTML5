@@ -1,4 +1,4 @@
-# DTV-HTML5-Simple
+# DTV-HTML5 Simple
 
 > Simple HTML5 video player powerd by **DevTrip Video** developers and contributers
 
