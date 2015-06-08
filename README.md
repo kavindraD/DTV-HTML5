@@ -1,6 +1,8 @@
 # DTV-HTML5
 
-HTML5 video player powerd by **DevTrip Video** developers and its' contributers
+HTML5 video player powerd by **DevTrip Video** developers and its' contributers.
+
+>`[Need independent contributors and Investors for TBD section.]`
 
 ## Goal
 
