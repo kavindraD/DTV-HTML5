@@ -96,7 +96,7 @@ Below are the events available with this video player component which can be cus
 
 **These customisation is optional not maindatory**
 
-**error** event handler can be customised as -
+Event **error** event handler can be customised as -
 
 > ```JS
 >	function errorHandler(){
@@ -105,7 +105,7 @@ Below are the events available with this video player component which can be cus
 >  _devtripVideo.cllback_errorHandler(errorHandler);
 ```
 		
-**loadedmetadata** event handler can be customised as -
+Event **loadedmetadata** event handler can be customised as -
 
 >```JS
 >	function loadedmetadataHandler(){
@@ -114,7 +114,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_loadedmetadataHandler(loadedmetadataHandler);
 ```
 		
-**timeupdate** event handler can be customised as -
+Event **timeupdate** event handler can be customised as -
 
 >```JS
 >	function timeupdateHandler(){
@@ -123,7 +123,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_timeupdateHandler(timeupdateHandler);
 ```
 		
-**pause** event handler can be customised as -
+Event **pause** event handler can be customised as -
 
 >```JS
 >	function pauseHandler(){
@@ -132,7 +132,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_pauseHandler(pauseHandler);
 ```
 		
-**playing** event handler can be customised as -
+Event **playing** event handler can be customised as -
 
 >```JS
 >	function playingHandler(){
@@ -141,7 +141,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_playingHandler(playingHandler);
 ```
 
-**volumechange** event handler can be customised as -
+Event **volumechange** event handler can be customised as -
 
 >```JS
 >	function volumechangeHandler(){
@@ -150,7 +150,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_volumechangeHandler(volumechangeHandler);
 ```
 		
-**loadstart** event handler can be customised as -
+Event **loadstart** event handler can be customised as -
 
 >```JS
 >	function loadstartHandler(){
@@ -159,7 +159,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_loadstartHandler(loadstartHandler);
 ```
 		
-**loadeddata** event handler can be customised as -
+Event **loadeddata** event handler can be customised as -
 
 >```JS
 >	function loadeddataHandler(){
@@ -168,7 +168,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_loadeddataHandler(loadeddataHandler);
 ```
 		
-**ended** event handler can be customised as -
+Event **ended** event handler can be customised as -
 
 >```JS
 >	function endedHandler(){
@@ -177,7 +177,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_endedHandler(endedHandler);
 ```
 		
-**emptied** event handler can be customised as -
+Event **emptied** event handler can be customised as -
 
 >```JS
 >	function emptiedHandler(){
@@ -186,7 +186,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_emptiedHandler(emptiedHandler);
 ```
 		
-**stalled** event handler can be customised as -
+Event **stalled** event handler can be customised as -
 
 >```JS
 >	function stalledHandler(){
@@ -195,7 +195,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_stalledHandler(stalledHandler);
 ```
 		
-**waiting** event handler can be customised as -
+Event **waiting** event handler can be customised as -
 
 >```JS
 >	function waitingHandler(){
@@ -204,7 +204,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_waitingHandler(waitingHandler);
 ```
 		
-**progress** event handler can be customised as -
+Event **progress** event handler can be customised as -
 
 >```JS
 >	function progressHandler(){
@@ -213,7 +213,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_progressHandler(progressHandler);
 ```
 		
-**durationchange** event handler can be customised as -
+Event **durationchange** event handler can be customised as -
 
 >```JS
 >	function durationchangeHandler(){
@@ -222,7 +222,7 @@ Below are the events available with this video player component which can be cus
 >	_devtripVideo.cllback_durationchangeHandler(durationchangeHandler);
 ```
 		
-**canplaythrough** event handler can be customised as -
+Event **canplaythrough** event handler can be customised as -
 
 >```JS
 >	function canplaythroughHandler(){
