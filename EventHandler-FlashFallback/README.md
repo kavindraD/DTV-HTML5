@@ -104,6 +104,8 @@ Event **error** event handler can be customised as -
 >  };
 >  _devtripVideo.cllback_errorHandler(errorHandler);
 ```
+```JS
+```
 		
 Event **loadedmetadata** event handler can be customised as -
 
@@ -113,6 +115,8 @@ Event **loadedmetadata** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_loadedmetadataHandler(loadedmetadataHandler);
 ```
+```JS
+```
 		
 Event **timeupdate** event handler can be customised as -
 
@@ -121,6 +125,8 @@ Event **timeupdate** event handler can be customised as -
 >		//do custom code need to execute on 'timeupdate' event handler.
 >	};
 >	_devtripVideo.cllback_timeupdateHandler(timeupdateHandler);
+```
+```JS
 ```
 		
 Event **pause** event handler can be customised as -
@@ -140,6 +146,8 @@ Event **playing** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_playingHandler(playingHandler);
 ```
+```JS
+```
 
 Event **volumechange** event handler can be customised as -
 
@@ -148,6 +156,8 @@ Event **volumechange** event handler can be customised as -
 >		//do custom code need to execute on 'volumechange' event handler.
 >	};
 >	_devtripVideo.cllback_volumechangeHandler(volumechangeHandler);
+```
+```JS
 ```
 		
 Event **loadstart** event handler can be customised as -
@@ -158,6 +168,8 @@ Event **loadstart** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_loadstartHandler(loadstartHandler);
 ```
+```JS
+```
 		
 Event **loadeddata** event handler can be customised as -
 
@@ -166,6 +178,8 @@ Event **loadeddata** event handler can be customised as -
 >		//do custom code need to execute on 'loadeddata' event handler.
 >	};
 >	_devtripVideo.cllback_loadeddataHandler(loadeddataHandler);
+```
+```JS
 ```
 		
 Event **ended** event handler can be customised as -
@@ -176,6 +190,8 @@ Event **ended** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_endedHandler(endedHandler);
 ```
+```JS
+```
 		
 Event **emptied** event handler can be customised as -
 
@@ -184,6 +200,8 @@ Event **emptied** event handler can be customised as -
 >		//do custom code need to execute on 'emptied' event handler.
 >	};
 >	_devtripVideo.cllback_emptiedHandler(emptiedHandler);
+```
+```JS
 ```
 		
 Event **stalled** event handler can be customised as -
@@ -194,6 +212,8 @@ Event **stalled** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_stalledHandler(stalledHandler);
 ```
+```JS
+```
 		
 Event **waiting** event handler can be customised as -
 
@@ -202,6 +222,8 @@ Event **waiting** event handler can be customised as -
 >		//do custom code need to execute on 'waiting' event handler.
 >	};
 >	_devtripVideo.cllback_waitingHandler(waitingHandler);
+```
+```JS
 ```
 		
 Event **progress** event handler can be customised as -
@@ -212,6 +234,8 @@ Event **progress** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_progressHandler(progressHandler);
 ```
+```JS
+```
 		
 Event **durationchange** event handler can be customised as -
 
@@ -221,6 +245,8 @@ Event **durationchange** event handler can be customised as -
 >	};
 >	_devtripVideo.cllback_durationchangeHandler(durationchangeHandler);
 ```
+```JS
+```
 		
 Event **canplaythrough** event handler can be customised as -
 
@@ -229,5 +255,7 @@ Event **canplaythrough** event handler can be customised as -
 >		//do custom code need to execute on 'canplaythrough' event handler.
 >	};
 >	_devtripVideo.cllback_canplaythroughHandler(canplaythroughHandler);
+```
+```JS
 ```
 
